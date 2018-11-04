@@ -1,0 +1,1225 @@
+{
+  "name": "五六面馆自定义模板",
+  "modules": [
+    {
+      "moduleId": 1,
+      "moduleName": "标题",
+      "moduleDesc": "定义商户LOGO & 票据名称（为避免打印失真，建议使用黑白商户logo图）",
+      "moduleSort": 1,
+      "chunks": [
+        {
+          "chunkType": "logo",
+          "showLine": false,
+          "chunkSort": 1,
+          "rows": [
+            {
+              "columns": [
+                {
+                  "id": "153818421921252352",
+                  "moduleId": 1,
+                  "documentTempletId": "131705436516290560",
+                  "parentId": null,
+                  "label": "商户logo",
+                  "value": "https://assets.2dfire.com/frontend/5a75e835c0b8c09f51acda09bdd68125.jpg",
+                  "labelStyle": null,
+                  "valueStyle": "{\"fontSize\":\"1\",\"align\":\"center\"}",
+                  "placeholder": "#{shopLogo}",
+                  "type": "logo",
+                  "componentProperty": null,
+                  "chunkSort": 1,
+                  "chunkType": "logo",
+                  "row": "1",
+                  "column": "1",
+                  "width": "100"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "chunkType": "basic",
+          "showLine": false,
+          "chunkSort": 2,
+          "rows": [
+            {
+              "columns": [
+                {
+                  "id": "153818421933835264",
+                  "systemComponentId": 1,
+                  "moduleId": 1,
+                  "documentTempletId": "131705436516290560",
+                  "parentId": null,
+                  "refId": null,
+                  "label": "店铺名称",
+                  "value": "店铺名称",
+                  "labelStyle": null,
+                  "valueStyle": "{\"fontSize\":\"4\",\"align\":\"center\"}",
+                  "placeholder": "#{shopName}",
+                  "type": "text",
+                  "componentProperty": "{\"customizable\":true}",
+                  "chunkSort": 2,
+                  "chunkType": "basic",
+                  "row": "1",
+                  "column": "1",
+                  "width": "100"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "chunkType": "basic",
+          "showLine": true,
+          "blankNumber": 0,
+          "chunkSort": 3,
+          "rows": [
+            {
+              "columns": [
+                {
+                  "id": "153818421946418176",
+                  "systemComponentId": 2,
+                  "moduleId": 1,
+                  "documentTempletId": "131705436516290560",
+                  "parentId": null,
+                  "refId": null,
+                  "label": "票据名称",
+                  "value": "结账单",
+                  "labelStyle": null,
+                  "valueStyle": "{\"fontSize\":\"4\",\"align\":\"center\"}",
+                  "placeholder": "#{ticketType}",
+                  "type": "text",
+                  "componentProperty": null,
+                  "chunkSort": 3,
+                  "chunkType": "basic",
+                  "row": "1",
+                  "column": "1",
+                  "width": "100"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "moduleId": 2,
+      "moduleName": "基础信息",
+      "moduleDescribe": "配置桌台号、流水号、订单号等",
+      "moduleSort": 2,
+      "chunks": [
+        {
+          "chunkType": "basic",
+          "chunkSort": 4,
+          "showLine": false,
+          "blankNumber": 0,
+          "rows": [
+            {
+              "columns": [
+                {
+                  "id": "153818421971584000",
+                  "systemComponentId": 3,
+                  "moduleId": 2,
+                  "documentTempletId": "131705436516290560",
+                  "parentId": null,
+                  "label": "桌台号",
+                  "value": "桌台号:1",
+                  "labelStyle": null,
+                  "valueStyle": "{\"fontSize\":\"1\",\"align\":\"left\"}",
+                  "placeholder": "桌台号:#{tableNum}",
+                  "type": "text",
+                  "componentProperty": null,
+                  "chunkType": "basic",
+                  "chunkSort": 4,
+                  "row": "1",
+                  "column": "1",
+                  "width": "70"
+                },
+                {
+                  "id": "153818421984166912",
+                  "systemComponentId": 4,
+                  "moduleId": 2,
+                  "documentTempletId": "131705436516290560",
+                  "parentId": null,
+                  "refId": null,
+                  "label": "单水号",
+                  "value": "单水号:1001",
+                  "labelStyle": null,
+                  "valueStyle": "{\"fontSize\":\"1\",\"align\":\"right\"}",
+                  "placeholder": "单水号:#{serialNum}",
+                  "type": "text",
+                  "componentProperty": null,
+                  "chunkType": "basic",
+                  "chunkSort": 4,
+                  "row": "1",
+                  "column": "2",
+                  "width": "30"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "chunkType": "basic",
+          "chunkSort": 5,
+          "showLine": false,
+          "blankNumber": 0,
+          "rows": [
+            {
+              "columns": [
+                {
+                  "id": "153818421996749824",
+                  "systemComponentId": 5,
+                  "moduleId": 2,
+                  "documentTempletId": "131705436516290560",
+                  "parentId": null,
+                  "refId": null,
+                  "label": "账单号",
+                  "value": "账单号:201608221001",
+                  "labelStyle": null,
+                  "valueStyle": "{\"fontSize\":\"1\",\"align\":\"left\"}",
+                  "placeholder": "账单号:#{orderNum}",
+                  "type": "text",
+                  "componentProperty": null,
+                  "chunkType": "basic",
+                  "chunkSort": 5,
+                  "row": "1",
+                  "column": "1",
+                  "width": "80"
+                },
+                {
+                  "id": "153818422009332736",
+                  "systemComponentId": 6,
+                  "moduleId": 2,
+                  "documentTempletId": "131705436516290560",
+                  "parentId": null,
+                  "refId": null,
+                  "label": "人数",
+                  "value": "人数:2",
+                  "labelStyle": null,
+                  "valueStyle": "{\"fontSize\":\"1\",\"align\":\"right\"}",
+                  "placeholder": "人数:#{peopleNum}",
+                  "type": "text",
+                  "componentProperty": null,
+                  "chunkType": "basic",
+                  "chunkSort": 5,
+                  "row": "1",
+                  "column": "2",
+                  "width": "20"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "rows": [
+            {
+              "columns": [
+                {
+                  "id": "153818421971584000",
+                  "systemComponentId": 3,
+                  "moduleId": 2,
+                  "documentTempletId": "131705436516290560",
+                  "parentId": null,
+                  "label": "桌台号",
+                  "value": "桌台号:1",
+                  "labelStyle": null,
+                  "valueStyle": "{\"fontSize\":\"1\",\"align\":\"left\"}",
+                  "placeholder": "桌台号:#{tableNum}",
+                  "type": "text",
+                  "componentProperty": null,
+                  "chunkType": "basic",
+                  "chunkSort": 6,
+                  "row": "1",
+                  "column": "1",
+                  "width": "70"
+                },
+                {
+                  "id": "153818421984166912",
+                  "systemComponentId": 4,
+                  "moduleId": 2,
+                  "documentTempletId": "131705436516290560",
+                  "parentId": null,
+                  "refId": null,
+                  "label": "单水号",
+                  "value": "单水号:1001",
+                  "labelStyle": null,
+                  "valueStyle": "{\"fontSize\":\"1\",\"align\":\"right\"}",
+                  "placeholder": "单水号:#{serialNum}",
+                  "type": "text",
+                  "componentProperty": null,
+                  "chunkType": "basic",
+                  "chunkSort": 6,
+                  "row": "1",
+                  "column": "2",
+                  "width": "30"
+                }
+              ]
+            }
+          ],
+          "blankNumber": 0,
+          "showLine": false,
+          "chunkType": "basic",
+          "chunkSort": 6
+        },
+        {
+          "chunkType": "basic",
+          "chunkSort": 7,
+          "showLine": false,
+          "rows": [
+            {
+              "columns": [
+                {
+                  "id": "153818422021915648",
+                  "systemComponentId": 7,
+                  "moduleId": 2,
+                  "documentTempletId": "131705436516290560",
+                  "parentId": null,
+                  "refId": null,
+                  "label": "会员",
+                  "value": "会员:张三(150XXXXXXXX)",
+                  "labelStyle": null,
+                  "valueStyle": "{\"fontSize\":\"1\",\"align\":\"left\"}",
+                  "placeholder": "会员:#{memberNum}",
+                  "type": "text",
+                  "componentProperty": null,
+                  "chunkType": "basic",
+                  "chunkSort": 7,
+                  "row": "1",
+                  "column": "1",
+                  "width": "100"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "chunkType": "basic",
+          "chunkSort": 8,
+          "showLine": false,
+          "blankNumber": 0,
+          "rows": [
+            {
+              "columns": [
+                {
+                  "id": "153818422038692864",
+                  "systemComponentId": 8,
+                  "moduleId": 2,
+                  "documentTempletId": "131705436516290560",
+                  "parentId": null,
+                  "refId": null,
+                  "label": "反结账原订单流水号",
+                  "value": "反结账原订单流水号:2",
+                  "labelStyle": null,
+                  "valueStyle": "{\"fontSize\":\"1\",\"align\":\"left\"}",
+                  "placeholder": "反结账原订单流水号:#{reverseAccountOldOrderNum}",
+                  "type": "text",
+                  "componentProperty": null,
+                  "chunkType": "basic",
+                  "chunkSort": 8,
+                  "row": "8",
+                  "column": "1",
+                  "width": "100"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "chunkType": "basic",
+          "chunkSort": 9,
+          "showLine": true,
+          "blankNumber": 0,
+          "rows": [
+            {
+              "columns": [
+                {
+                  "id": "153818422051275776",
+                  "systemComponentId": 553,
+                  "moduleId": 2,
+                  "documentTempletId": "131705436516290560",
+                  "parentId": null,
+                  "refId": null,
+                  "label": "就餐人数详情",
+                  "value": "成人2位，儿童1位，老人1位",
+                  "labelStyle": null,
+                  "valueStyle": "{\"fontSize\":\"2\",\"align\":\"left\"}",
+                  "placeholder": "#{mealPeopleDetail}",
+                  "type": "text",
+                  "componentProperty": null,
+                  "chunkType": "basic",
+                  "chunkSort": 9,
+                  "row": "9",
+                  "column": "1",
+                  "width": "100"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "moduleId": 3,
+      "moduleName": "订单明细",
+      "moduleDescribe": "配置商品、单价、数量、总价等(\"商品第二语言\"适用于OS7.8以上版本)",
+      "moduleSort": 3,
+      "chunks": [
+        {
+          "chunkType": "table",
+          "chunkSort": 10,
+          "showLine": true,
+          "blankNumber": 0,
+          "rows": [
+            {
+              "columns": [
+                {
+                  "id": "153818422093218816",
+                  "systemComponentId": 10,
+                  "moduleId": 3,
+                  "documentTempletId": "131705436516290560",
+                  "parentId": "153818422080635904",
+                  "refId": null,
+                  "label": "商品",
+                  "value": "商品",
+                  "labelStyle": null,
+                  "valueStyle": "{\"fontSize\":\"1\",\"align\":\"left\"}",
+                  "placeholder": "商品",
+                  "type": "thead",
+                  "componentProperty": "{\"notRemove\":true,\"visiable\":\"#{goodSourceSize}!=0\"}",
+                  "chunkType": "table",
+                  "chunkSort": 10,
+                  "row": "1",
+                  "column": "1",
+                  "width": "40"
+                },
+                {
+                  "id": "153818422101607424",
+                  "systemComponentId": 11,
+                  "moduleId": 3,
+                  "documentTempletId": "131705436516290560",
+                  "parentId": "153818422080635904",
+                  "refId": null,
+                  "label": "单价",
+                  "value": "单价",
+                  "labelStyle": null,
+                  "valueStyle": "{\"fontSize\":\"1\",\"align\":\"right\"}",
+                  "placeholder": "单价",
+                  "type": "thead",
+                  "componentProperty": "{\"visiable\":\"#{goodSourceSize}!=0\"}",
+                  "chunkType": "table",
+                  "chunkSort": 10,
+                  "row": "1",
+                  "column": "2",
+                  "width": "20"
+                },
+                {
+                  "id": "153818422114190336",
+                  "systemComponentId": 12,
+                  "moduleId": 3,
+                  "documentTempletId": "131705436516290560",
+                  "parentId": "153818422080635904",
+                  "refId": null,
+                  "label": "数量",
+                  "value": "数量",
+                  "labelStyle": null,
+                  "valueStyle": "{\"fontSize\":\"1\",\"align\":\"right\"}",
+                  "placeholder": "数量",
+                  "type": "thead",
+                  "componentProperty": "{\"visiable\":\"#{goodSourceSize}!=0\"}",
+                  "chunkType": "table",
+                  "chunkSort": 10,
+                  "row": "1",
+                  "column": "3",
+                  "width": "20"
+                },
+                {
+                  "id": "153818422122578944",
+                  "systemComponentId": 13,
+                  "moduleId": 3,
+                  "documentTempletId": "131705436516290560",
+                  "parentId": "153818422080635904",
+                  "refId": null,
+                  "label": "价格",
+                  "value": "价格",
+                  "labelStyle": null,
+                  "valueStyle": "{\"fontSize\":\"1\",\"align\":\"right\"}",
+                  "placeholder": "价格",
+                  "type": "thead",
+                  "componentProperty": "{\"visiable\":\"#{goodSourceSize}!=0\"}",
+                  "chunkType": "table",
+                  "chunkSort": 10,
+                  "row": "10",
+                  "column": "4",
+                  "width": "20"
+                }
+              ],
+              "columns": [
+                {
+                  "id": "153818422143550464",
+                  "systemComponentId": 15,
+                  "moduleId": 3,
+                  "documentTempletId": "131705436516290560",
+                  "parentId": "153818422080635904",
+                  "refId": 10,
+                  "label": "商品",
+                  "value": "1.回锅肉",
+                  "labelStyle": null,
+                  "valueStyle": "{\"fontSize\":\"1\",\"align\":\"left\"}",
+                  "placeholder": "#{good}",
+                  "type": "tbody",
+                  "componentProperty": null,
+                  "chunkType": "table",
+                  "chunkSort": 10,
+                  "row": "2",
+                  "column": "1",
+                  "width": "40"
+                },
+                {
+                  "id": "153818422151939072",
+                  "systemComponentId": 16,
+                  "moduleId": 3,
+                  "documentTempletId": "131705436516290560",
+                  "parentId": "153818422080635904",
+                  "refId": 11,
+                  "label": "单价",
+                  "value": "16.00",
+                  "labelStyle": null,
+                  "valueStyle": "{\"fontSize\":\"1\",\"align\":\"right\"}",
+                  "placeholder": "#{price}",
+                  "type": "tbody",
+                  "componentProperty": null,
+                  "chunkType": "table",
+                  "chunkSort": 10,
+                  "row": "2",
+                  "column": "2",
+                  "width": "20"
+                },
+                {
+                  "id": "153818422164521984",
+                  "systemComponentId": 17,
+                  "moduleId": 3,
+                  "documentTempletId": "131705436516290560",
+                  "parentId": "153818422080635904",
+                  "refId": 12,
+                  "label": "数量",
+                  "value": "1/份",
+                  "labelStyle": null,
+                  "valueStyle": "{\"fontSize\":\"1\",\"align\":\"right\"}",
+                  "placeholder": "#{number}",
+                  "type": "tbody",
+                  "componentProperty": null,
+                  "chunkType": "table",
+                  "chunkSort": 10,
+                  "row": "2",
+                  "column": "3",
+                  "width": "20"
+                },
+                {
+                  "id": "153818422172910592",
+                  "systemComponentId": 18,
+                  "moduleId": 3,
+                  "documentTempletId": "131705436516290560",
+                  "parentId": "153818422080635904",
+                  "refId": 13,
+                  "label": "价格",
+                  "value": "16.00",
+                  "labelStyle": null,
+                  "valueStyle": "{\"fontSize\":\"1\",\"align\":\"right\"}",
+                  "placeholder": "#{amount}",
+                  "type": "tbody",
+                  "componentProperty": null,
+                  "chunkType": "table",
+                  "chunkSort": 10,
+                  "row": "2",
+                  "column": "4",
+                  "width": "20"
+                }
+              ],
+              "columns": [
+                {
+                  "id": "153818422181299200",
+                  "systemComponentId": 19,
+                  "moduleId": 3,
+                  "documentTempletId": "131705436516290560",
+                  "parentId": "153818422080635904",
+                  "refId": 10,
+                  "label": "做法",
+                  "value": "【炒】",
+                  "labelStyle": null,
+                  "valueStyle": "{\"fontSize\":\"1\",\"align\":\"left\"}",
+                  "placeholder": "#{practice}",
+                  "type": "text",
+                  "componentProperty": null,
+                  "chunkType": "table",
+                  "chunkSort": 10,
+                  "row": "3",
+                  "column": "1",
+                  "width": "80"
+                },
+                {
+                  "id": "153818422193882112",
+                  "systemComponentId": 20,
+                  "moduleId": 3,
+                  "documentTempletId": "131705436516290560",
+                  "parentId": "153818422080635904",
+                  "refId": 13,
+                  "label": "做法价格",
+                  "value": "1.00",
+                  "labelStyle": null,
+                  "valueStyle": "{\"fontSize\":\"1\",\"align\":\"right\"}",
+                  "placeholder": "#{practicePrice}",
+                  "type": "text",
+                  "componentProperty": null,
+                  "chunkType": "table",
+                  "chunkSort": 10,
+                  "row": "3",
+                  "column": "2",
+                  "width": "20"
+                }
+              ],
+              "columns": [
+                {
+                  "id": "153818422202270720",
+                  "systemComponentId": 21,
+                  "moduleId": 3,
+                  "documentTempletId": "131705436516290560",
+                  "parentId": "153818422080635904",
+                  "refId": 10,
+                  "label": "配料",
+                  "value": "【葱x1】",
+                  "labelStyle": null,
+                  "valueStyle": "{\"fontSize\":\"1\",\"align\":\"left\"}",
+                  "placeholder": "#{burdening}",
+                  "type": "text",
+                  "componentProperty": null,
+                  "chunkType": "table",
+                  "chunkSort": 10,
+                  "row": "4",
+                  "column": "1",
+                  "width": "80"
+                },
+                {
+                  "id": "153818422210659328",
+                  "systemComponentId": 22,
+                  "moduleId": 3,
+                  "documentTempletId": "131705436516290560",
+                  "parentId": "153818422080635904",
+                  "refId": 13,
+                  "label": "配料价格",
+                  "value": "1.00",
+                  "labelStyle": null,
+                  "valueStyle": "{\"fontSize\":\"1\",\"align\":\"right\"}",
+                  "placeholder": "#{burdeningPrice}",
+                  "type": "text",
+                  "componentProperty": null,
+                  "chunkType": "table",
+                  "chunkSort": 10,
+                  "row": "4",
+                  "column": "2",
+                  "width": "20"
+                }
+              ],
+              "columns": [
+                {
+                  "id": "153818422223242240",
+                  "systemComponentId": 23,
+                  "moduleId": 3,
+                  "documentTempletId": "131705436516290560",
+                  "parentId": "153818422080635904",
+                  "refId": 509,
+                  "label": "商品备注",
+                  "value": "【备注:多放肉】",
+                  "labelStyle": null,
+                  "valueStyle": "{\"fontSize\":\"1\",\"align\":\"left\"}",
+                  "placeholder": "#{memo}",
+                  "type": "text",
+                  "componentProperty": null,
+                  "chunkType": "table",
+                  "chunkSort": 10,
+                  "row": "5",
+                  "column": "1",
+                  "width": "100"
+                }
+              ],
+              "columns": [
+                {
+                  "id": "153818422231630848",
+                  "systemComponentId": 503,
+                  "moduleId": 3,
+                  "documentTempletId": "131705436516290560",
+                  "parentId": "153818422080635904",
+                  "refId": 10,
+                  "label": "商品优惠名称",
+                  "value": "【单品5折】",
+                  "labelStyle": null,
+                  "valueStyle": "{\"fontSize\":\"1\",\"align\":\"left\"}",
+                  "placeholder": "#{dishDiscountName}",
+                  "type": "text",
+                  "componentProperty": null,
+                  "chunkType": "table",
+                  "chunkSort": 10,
+                  "row": "6",
+                  "column": "1",
+                  "width": "60"
+                },
+                {
+                  "id": "153818422240019456",
+                  "systemComponentId": 504,
+                  "moduleId": 3,
+                  "documentTempletId": "131705436516290560",
+                  "parentId": "153818422080635904",
+                  "refId": 13,
+                  "label": "商品优惠价格",
+                  "value": "-10.00",
+                  "labelStyle": null,
+                  "valueStyle": "{\"fontSize\":\"1\",\"align\":\"right\"}",
+                  "placeholder": "#{dishDiscountPrice}",
+                  "type": "text",
+                  "componentProperty": null,
+                  "chunkType": "table",
+                  "chunkSort": 10,
+                  "row": "6",
+                  "column": "2",
+                  "width": "40"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "rows": [
+            {
+              "columns": [
+                {
+                  "id": null,
+                  "parentId": 24,
+                  "refId": null,
+                  "moduleId": 3,
+                  "label": "合计",
+                  "value": "合计",
+                  "labelStyle": null,
+                  "valueStyle": "{\"fontSize\":\"1\",\"align\":\"left\"}",
+                  "placeholder": "合计",
+                  "type": "tbody",
+                  "componentProperty": null,
+                  "chunkType": "table",
+                  "chunkSort": 11,
+                  "row": "1",
+                  "column": "1",
+                  "width": "60",
+                  "systemComponentId": 25
+                },
+                {
+                  "id": null,
+                  "parentId": 24,
+                  "refId": 12,
+                  "moduleId": 3,
+                  "label": "合计数量",
+                  "value": "1",
+                  "labelStyle": null,
+                  "valueStyle": "{\"fontSize\":\"1\",\"align\":\"right\"}",
+                  "placeholder": "#{goodNumber}",
+                  "type": "tbody",
+                  "componentProperty": null,
+                  "chunkType": "table",
+                  "chunkSort": 11,
+                  "row": "1",
+                  "column": "2",
+                  "width": "20",
+                  "systemComponentId": 26
+                },
+                {
+                  "id": null,
+                  "parentId": 24,
+                  "refId": 13,
+                  "moduleId": 3,
+                  "label": "合计价格",
+                  "value": "18.00",
+                  "labelStyle": null,
+                  "valueStyle": "{\"fontSize\":\"1\",\"align\":\"right\"}",
+                  "placeholder": "#{goodPrice}",
+                  "type": "tbody",
+                  "componentProperty": null,
+                  "chunkType": "table",
+                  "chunkSort": 11,
+                  "row": "1",
+                  "column": "3",
+                  "width": "20",
+                  "systemComponentId": 27
+                }
+              ]
+            },
+            {
+              "columns": [
+                {
+                  "id": null,
+                  "parentId": null,
+                  "refId": null,
+                  "moduleId": 3,
+                  "label": "合计",
+                  "value": null,
+                  "labelStyle": null,
+                  "valueStyle": null,
+                  "placeholder": null,
+                  "type": "tableFlag",
+                  "componentProperty": "{\"name\":\"goodTotal\"}",
+                  "sort": 51,
+                  "row": "16",
+                  "column": "1",
+                  "width": "100",
+                  "systemComponentId": 24
+                }
+              ]
+            }
+          ],
+          "chunkType": "table",
+          "chunkSort": 11,
+          "blankNumber": 0,
+          "showLine": false
+        },
+        {
+          "showLine": true,
+          "blankNumber": 0,
+          "chunkType": "basic",
+          "chunkSort": 12,
+          "rows": [
+            {
+              "columns": [
+                {
+                  "id": "153818422332294144",
+                  "systemComponentId": 28,
+                  "moduleId": 3,
+                  "documentTempletId": "131705436516290560",
+                  "parentId": null,
+                  "refId": null,
+                  "label": "整单备注",
+                  "value": "整单备注:不要太辣",
+                  "labelStyle": null,
+                  "valueStyle": "{\"fontSize\":\"1\",\"align\":\"left\"}",
+                  "placeholder": "整单备注:#{orderMemo}",
+                  "type": "text",
+                  "componentProperty": null,
+                  "chunkType": "basic",
+                  "chunkSort": 12,
+                  "row": "1",
+                  "column": "1",
+                  "width": "100"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "showLine": true,
+          "blankNumber": 0,
+          "chunkType": "table",
+          "chunkSort": 13,
+          "rows": [
+            {
+              "columns": [
+                {
+                  "id": "153818422365848576",
+                  "systemComponentId": 30,
+                  "moduleId": 3,
+                  "documentTempletId": "131705436516290560",
+                  "parentId": "153818422357459968",
+                  "refId": null,
+                  "label": "赠菜明细表",
+                  "value": "赠菜明细",
+                  "labelStyle": null,
+                  "valueStyle": "{\"fontSize\":\"2\",\"align\":\"left\"}",
+                  "placeholder": "#{privilegeType}",
+                  "type": "title",
+                  "componentProperty": null,
+                  "chunkType": "table",
+                  "chunkSort": 13,
+                  "row": "1",
+                  "column": "1",
+                  "width": "100"
+                }
+              ],
+              "columns": [
+                {
+                  "id": "153818422374237184",
+                  "systemComponentId": 31,
+                  "moduleId": 3,
+                  "documentTempletId": "131705436516290560",
+                  "parentId": "153818422357459968",
+                  "refId": null,
+                  "label": "优惠名称",
+                  "value": "单品5折",
+                  "labelStyle": null,
+                  "valueStyle": "{\"fontSize\":\"1\",\"align\":\"left\"}",
+                  "placeholder": "#{privilegeTypeDetailName}",
+                  "type": "text",
+                  "componentProperty": null,
+                  "chunkType": "table",
+                  "chunkSort": 13,
+                  "row": "2",
+                  "column": "1",
+                  "width": "70"
+                },
+                {
+                  "id": "153818422386820096",
+                  "systemComponentId": 32,
+                  "moduleId": 3,
+                  "documentTempletId": "131705436516290560",
+                  "parentId": "153818422357459968",
+                  "refId": null,
+                  "label": "优惠数量",
+                  "value": "1/份",
+                  "labelStyle": null,
+                  "valueStyle": "{\"fontSize\":\"1\",\"align\":\"left\"}",
+                  "placeholder": "#{privilegeTypeDetailNumber}",
+                  "type": "text",
+                  "componentProperty": null,
+                  "chunkType": "table",
+                  "chunkSort": 13,
+                  "row": "2",
+                  "column": "2",
+                  "width": "10"
+                },
+                {
+                  "id": "153818422395208704",
+                  "systemComponentId": 33,
+                  "moduleId": 3,
+                  "documentTempletId": "131705436516290560",
+                  "parentId": "153818422357459968",
+                  "refId": null,
+                  "label": "优惠价格",
+                  "value": "-8.00",
+                  "labelStyle": null,
+                  "valueStyle": "{\"fontSize\":\"1\",\"align\":\"right\"}",
+                  "placeholder": "#{privilegeTypeDetailNameAmount}",
+                  "type": "text",
+                  "componentProperty": null,
+                  "chunkType": "table",
+                  "chunkSort": 13,
+                  "row": "2",
+                  "column": "3",
+                  "width": "20"
+                }
+              ],
+              "columns": [
+                {
+                  "id": "153818422357459968",
+                  "systemComponentId": 29,
+                  "moduleId": 3,
+                  "documentTempletId": "131705436516290560",
+                  "parentId": null,
+                  "refId": null,
+                  "label": "赠菜明细模块",
+                  "value": null,
+                  "labelStyle": null,
+                  "valueStyle": null,
+                  "placeholder": "#{privilegeSource}",
+                  "type": "tableFlag",
+                  "componentProperty": "{\"name\":\"privilege\"}",
+                  "chunkType": "table",
+                  "chunkSort": 13,
+                  "row": "1",
+                  "column": "1",
+                  "width": "100"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "showLine": true,
+          "blankNumber": 0,
+          "chunkType": "table",
+          "chunkSort": 14,
+          "rows": [
+            {
+              "columns": [
+                {
+                  "id": "153818422432957440",
+                  "systemComponentId": 35,
+                  "moduleId": 3,
+                  "documentTempletId": "131705436516290560",
+                  "parentId": "153818422420374528",
+                  "refId": null,
+                  "label": "附加费名称",
+                  "value": "包间费",
+                  "labelStyle": null,
+                  "valueStyle": "{\"fontSize\":\"1\",\"align\":\"left\"}",
+                  "placeholder": "#{surchargeName}",
+                  "type": "text",
+                  "componentProperty": "{\"visiable\":\"#{surchargeAmount}!=0\"}",
+                  "chunkType": "table",
+                  "chunkSort": 14,
+                  "row": "1",
+                  "column": "1",
+                  "width": "70"
+                },
+                {
+                  "id": "153818422441346048",
+                  "systemComponentId": 36,
+                  "moduleId": 3,
+                  "documentTempletId": "131705436516290560",
+                  "parentId": "153818422420374528",
+                  "refId": null,
+                  "label": "附加费金额",
+                  "value": "200.00",
+                  "labelStyle": null,
+                  "valueStyle": "{\"fontSize\":\"1\",\"align\":\"right\"}",
+                  "placeholder": "#{surchargeAmount}",
+                  "type": "text",
+                  "componentProperty": "{\"visiable\":\"#{surchargeAmount}!=0\"}",
+                  "chunkType": "table",
+                  "chunkSort": 14,
+                  "row": "1",
+                  "column": "2",
+                  "width": "30"
+                }
+              ],
+              "columns": [
+                {
+                  "id": "153818422420374528",
+                  "systemComponentId": 34,
+                  "moduleId": 3,
+                  "documentTempletId": "131705436516290560",
+                  "parentId": null,
+                  "refId": null,
+                  "label": "附加费",
+                  "value": null,
+                  "labelStyle": null,
+                  "valueStyle": null,
+                  "placeholder": "#{surchargeSource}",
+                  "type": "tableFlag",
+                  "componentProperty": "{\"name\":\"extraCharge\"}",
+                  "chunkType": "table",
+                  "chunkSort": 14,
+                  "row": "1",
+                  "column": "1",
+                  "width": "100"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "moduleId": 8,
+      "moduleName": "底栏",
+      "moduleDescribe": "配置服务员、时间、商户信息等",
+      "moduleSort": 8,
+      "chunks": [
+        {
+          "showLine": false,
+          "blankNumber": 0,
+          "chunkType": "basic",
+          "chunkSort": 15,
+          "rows": [
+            {
+              "columns": [
+                {
+                  "id": "153818423582196736",
+                  "systemComponentId": 126,
+                  "moduleId": 8,
+                  "documentTempletId": "131705436516290560",
+                  "parentId": null,
+                  "refId": null,
+                  "label": "服务员",
+                  "value": "服务员:李四",
+                  "labelStyle": null,
+                  "valueStyle": "{\"fontSize\":\"1\",\"align\":\"left\"}",
+                  "placeholder": "服务员:#{waiter}",
+                  "type": "text",
+                  "componentProperty": null,
+                  "chunkType": "basic",
+                  "chunkSort": 15,
+                  "row": "1",
+                  "column": "1",
+                  "width": "50"
+                },
+                {
+                  "id": "153818423594779648",
+                  "systemComponentId": 127,
+                  "moduleId": 8,
+                  "documentTempletId": "131705436516290560",
+                  "parentId": null,
+                  "refId": null,
+                  "label": "操作员",
+                  "value": "操作员:王五",
+                  "labelStyle": null,
+                  "valueStyle": "{\"fontSize\":\"1\",\"align\":\"right\"}",
+                  "placeholder": "操作员:#{cashier}",
+                  "type": "text",
+                  "componentProperty": null,
+                  "chunkType": "basic",
+                  "chunkSort": 15,
+                  "row": "1",
+                  "column": "2",
+                  "width": "50"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "showLine": false,
+          "blankNumber": 0,
+          "chunkType": "basic",
+          "chunkSort": 16,
+          "rows": [
+            {
+              "columns": [
+                {
+                  "id": "153818423607362560",
+                  "systemComponentId": 128,
+                  "moduleId": 8,
+                  "documentTempletId": "131705436516290560",
+                  "parentId": null,
+                  "refId": null,
+                  "label": "开单",
+                  "value": "开单:YYYY-MM-DD HH:MM:SS",
+                  "labelStyle": null,
+                  "valueStyle": "{\"fontSize\":\"1\",\"align\":\"left\"}",
+                  "placeholder": "开单:#{openBillingTime}",
+                  "type": "text",
+                  "componentProperty": null,
+                  "chunkType": "basic",
+                  "chunkSort": 16,
+                  "row": "1",
+                  "column": "1",
+                  "width": "50"
+                },
+                {
+                  "id": "153818423619945472",
+                  "systemComponentId": 129,
+                  "moduleId": 8,
+                  "documentTempletId": "131705436516290560",
+                  "parentId": null,
+                  "refId": null,
+                  "label": "打印",
+                  "value": "打印:YYYY-MM-DD HH:MM:SS",
+                  "labelStyle": null,
+                  "valueStyle": "{\"fontSize\":\"1\",\"align\":\"right\"}",
+                  "placeholder": "打印:#{printTime}",
+                  "type": "text",
+                  "componentProperty": null,
+                  "chunkType": "basic",
+                  "chunkSort": 16,
+                  "row": "1",
+                  "column": "2",
+                  "width": "50"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "showLine": false,
+          "blankNumber": 0,
+          "chunkType": "table",
+          "chunkSort": 17,
+          "rows": [
+            {
+              "columns": [
+                {
+                  "id": "153818423645111296",
+                  "systemComponentId": 131,
+                  "moduleId": 8,
+                  "documentTempletId": "131705436516290560",
+                  "parentId": "153818423636722688",
+                  "refId": null,
+                  "label": "商户地址",
+                  "value": "XX市XX地址",
+                  "labelStyle": null,
+                  "valueStyle": "{\"fontSize\":\"1\",\"align\":\"center\"}",
+                  "placeholder": "#{shopAddress}",
+                  "type": "tbody",
+                  "componentProperty": null,
+                  "chunkType": "table",
+                  "chunkSort": 17,
+                  "row": "1",
+                  "column": "1",
+                  "width": "100"
+                }
+              ]
+            },
+            {
+              "columns": [
+                {
+                  "id": "153818423657694208",
+                  "systemComponentId": 132,
+                  "moduleId": 8,
+                  "documentTempletId": "131705436516290560",
+                  "parentId": "153818423636722688",
+                  "refId": null,
+                  "label": "商户电话号码",
+                  "value": "15XXXXXXXXX",
+                  "labelStyle": null,
+                  "valueStyle": "{\"fontSize\":\"1\",\"align\":\"center\"}",
+                  "placeholder": "#{shopPhone}",
+                  "type": "tbody",
+                  "componentProperty": null,
+                  "chunkType": "table",
+                  "chunkSort": 17,
+                  "row": "2",
+                  "column": "1",
+                  "width": "100"
+                }
+              ]
+            },
+            {
+              "columns": [
+                {
+                  "id": "153818423666082816",
+                  "systemComponentId": 133,
+                  "moduleId": 8,
+                  "documentTempletId": "131705436516290560",
+                  "parentId": "153818423636722688",
+                  "refId": null,
+                  "label": "商户自定义内容",
+                  "value": "欢迎下次光临",
+                  "labelStyle": null,
+                  "valueStyle": "{\"fontSize\":\"1\",\"align\":\"center\"}",
+                  "placeholder": "欢迎下次光临",
+                  "type": "tbody",
+                  "componentProperty": "{\"customizable\":true}",
+                  "chunkType": "table",
+                  "chunkSort": 17,
+                  "row": "3",
+                  "column": "1",
+                  "width": "100"
+                }
+              ]
+            },
+            {
+              "columns": [
+                {
+                  "id": "153818423636722688",
+                  "systemComponentId": 130,
+                  "moduleId": 8,
+                  "documentTempletId": "131705436516290560",
+                  "parentId": null,
+                  "refId": null,
+                  "label": "商户信息",
+                  "value": null,
+                  "labelStyle": null,
+                  "valueStyle": null,
+                  "placeholder": null,
+                  "type": "tableFlag",
+                  "componentProperty": "{\"name\":\"shopInfo\"}",
+                  "chunkType": "table",
+                  "chunkSort": 17,
+                  "row": null,
+                  "column": null,
+                  "width": null
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "templateType": "结账单客户联",
+  "id": "88888",
+  "preview": "http://img.keruyun.net/3e241f20caa8439085fe77898254721e.png",
+  "version": "1"
+}
